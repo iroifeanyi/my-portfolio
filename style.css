@@ -41,7 +41,6 @@ body {
     
 }
 #welcome-section {
-    height: 100vh;
     background-color: #212124;
     text-align: center;
     justify-content: center;
@@ -52,31 +51,32 @@ body {
 }
 .first-text {
     color: #fca309;
-    font-size: 40px;
-
+    font-size: 30px;
+    margin-top: 100px;
 }
 .name{
     color: #286c9b;
     font-family:cursive;
-    font-size: 60px;
+    font-size: 40px;
 }
 .my-img{
     width: 100%;
-    /* border-radius: 100px; */
+    border-radius: 50%;
+    padding: 10px 10px 10px 10px;
 }
 .my-image{
     background-color: #212124;
     width: 150px;
-    border-radius: 90%;
-    overflow: hidden;
     margin: 0 auto;
     margin-top: 20px;
 }
 .sec-text {
     color: #286c9b;
     font-style: italic;
-    font-size: 30px;
-
+    font-size: 20px;
+    line-height: 30px;
+    width: 80%;
+    margin: 0 auto;
 }
 #projects {
     background-color: #45567d;
@@ -148,11 +148,11 @@ img {
 .project-title:hover:before {
     content: "</";
     /* right: 0; */
-    margin-right: -18px;
+    margin-right: 1px;
 }
 .project-title:hover::after {
     content: "/>";
-    margin-left: -23px;
+    margin-left: 2px;
 }
 
 .project-title::before,.project-title::after {
@@ -184,11 +184,6 @@ a {
     transform: translateX(-47%);
 
 }
-/* .show-btn:hover {
-    background: #286c9b;
-    transition: background 0.3 ease-out;
-
-} */
 .thrd-con {
     text-align: center;
     justify-content: center;
@@ -235,12 +230,11 @@ a {
 }
 footer {
     font-weight: 300;
-    display: flex;
-    justify-content: space-evenly;
     padding: 2rem;
     border-top: 4px solid #286c9b;
-    border-bottom: 20px solid #286c9b;
+    border-bottom: 10px solid #286c9b;
     color: #fca309;
+    text-align: center;
 }
 .foot {
     color: #0686e2;
@@ -361,3 +355,22 @@ footer {
     }
 
 }
+@media screen and (max-width: 454px){
+    #first {
+        background-color: #286c9b;
+        padding: 0px 80px;
+        position: fixed;
+        width: 100%;
+        z-index: 9;
+        top: 0;
+        text-align: center;
+    }
+    .nav-link {
+        padding: 24.5px;
+        margin-left: 30px;
+
+    }
+    .first-text{
+        margin-top: 260px;
+    }
+} 
